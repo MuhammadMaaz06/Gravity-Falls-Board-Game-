@@ -1,4 +1,4 @@
-//muhammad maaz_i253066_assignment02
+//Gravity falls board game
 
 #include<iostream>
 using namespace std;
@@ -25,7 +25,7 @@ int main()
 	if(column<1 || column>3)    	//first condition
 	{
 		cout<<"INVALID INPUT! choose a number between (1-3):"<<endl;
-		
+		continue;
 	}
 		if(column== 1) 
 	{
@@ -46,7 +46,6 @@ int main()
 	{
 		cout<<" This column is full! choose another:"<<endl; //displaying msg 
 	}
-	continue;
 	}	
 		if(column== 2) //second condition
 	{
@@ -67,7 +66,6 @@ int main()
 	{
 		cout<<" This column is full! choose another:"<<endl;
 	}
-	continue;	
 	}	
 		if(column== 3) //third condition
 	{
@@ -88,7 +86,6 @@ int main()
 	{
 		cout<<" This column is full! choose another:"<<endl;
 	}
-	continue;
 }
 plays++; //using it as a counter to check whether the game has a result or a darw 
 
@@ -119,4 +116,3 @@ if((n1==turn&&n2==turn&&n3==turn)||(n4==turn&&n5==turn&&n6==turn)	/*using these 
 return 0;
 
 }
-
